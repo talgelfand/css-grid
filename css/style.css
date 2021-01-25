@@ -5,13 +5,11 @@
 }
 
 .grid-container {
+    width: 600px;
+    height: 600px;
     display: grid;
-    /* grid-template-columns: 200px 200px 300px;
-    grid-template-rows: 60px 150px 60px; */
-    grid-template: 60px 150px 60px / 200px 200px 300px;
-    /* column-gap: 20px;
-    row-gap: 20px; */
-    gap: 20px;
+    grid-template-columns: repeat(3, 50px 1fr) 20px;
+    grid-template-rows: 2fr 1fr 1fr;
 }
 
 .grid-elem {
